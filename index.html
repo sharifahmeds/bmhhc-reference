@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference Form - Blue Mountain Home Health Care</title>
+<meta name="robots" content="noindex">
+<style>
+  html,body{margin:0;height:100%;background:#fff;font-family:Arial,Helvetica,sans-serif}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+  #msg{display:none;max-width:520px;margin:15vh auto;padding:0 20px;color:#1F3A5F;text-align:center;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="msg">
+  <h2>Blue Mountain Home Health Care, Inc.</h2>
+  <p>This reference link is incomplete. Please use the button or link in the email we sent you, or call our office and we will help.</p>
+</div>
+<iframe id="f" title="Reference form" allow="clipboard-write"></iframe>
+<script>
+(function(){
+  var BASE = 'https://script.google.com/macros/s/AKfycbxfVoqFGv6uRI5G4M3V4Ul1qw9nQQyTJrUhTO25M8i9iw4iAv2c17KjYska189Q5h7j/exec';
+  var q = location.search || '';
+  var f = document.getElementById('f');
+  if (q.indexOf('t=') < 0) { f.style.display = 'none'; document.getElementById('msg').style.display = 'block'; return; }
+  f.src = BASE + q;
+})();
+</script>
+</body>
+</html>
